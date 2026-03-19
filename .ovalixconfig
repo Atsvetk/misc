@@ -1,0 +1,12 @@
+version: "2.2"
+exclusions:
+  - scope: chat
+    allowed-entities:
+      - Keyword:key word
+      - Topic:Code
+
+  - scope: file
+    path: "./**/test.js"
+    allowed-entities:
+      - PII:Email:sashainpajamas@example.com
+      - PII:Email:sasha@example.com
